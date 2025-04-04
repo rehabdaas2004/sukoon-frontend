@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         loadingIndicator.style.display = 'block';
         resultsContainer.innerHTML = '';
 
-        fetch(`http://localhost:3001/search?q=${encodeURIComponent(searchText)}`)
+        fetch(`https://sukooon-backend-only-hbhwb6cjcvd2fne5.uaenorth-01.azurewebsites.net/search?q=${encodeURIComponent(searchText)}`)
             .then(response => response.json())
             .then(duaas => {
                 displayResults(duaas);
