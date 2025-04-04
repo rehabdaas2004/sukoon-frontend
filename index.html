@@ -16,12 +16,12 @@
             <ul class="nav-list">
                 <li><a href="index.html" class="nav-link" id="home-link">Home</a></li>
                 <li><a href="about.html" class="nav-link" id="about-link">About Us</a></li>
-                <li><a href="#" class="nav-link" id="duaas-link">Find Duaas</a></li>
-                <li><a href="#" class="nav-link" id="contact-link">Contact</a></li>
+                <li><a href="duaas.html" class="nav-link" id="duaas-link">Find Duaas</a></li>
+                <li><a href="contact.html" class="nav-link" id="contact-link">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <div class="container">
         <main class="main-content">
             <section class="card">
@@ -29,7 +29,7 @@
                 <p>This website is designed to help you find appropriate Islamic supplications (duaas) based on your current emotional state or needs.</p>
                 <p>We understand that everyone experiences different emotions and challenges, and we aim to provide spiritual support through authentic Islamic duaas.</p>
             </section>
-            
+
             <section class="card">
                 <h2>How to Use This Website</h2>
                 <ol class="steps">
@@ -41,7 +41,7 @@
                 </ol>
                 <button class="cta-button" id="getStartedBtn">Get Started Now</button>
             </section>
-            
+
             <section class="card">
                 <h2>Tips for Best Experience</h2>
                 <ul class="steps">
@@ -53,13 +53,25 @@
             </section>
         </main>
     </div>
-    
+
     <footer>
         <div class="container">
             <p>© 2023 Sukoon | <a href="about.html" style="color: var(--primary-color);">About Us</a></p>
         </div>
     </footer>
-    
+
+    <script>
+        // Enable "Get Started" button to redirect to duaas.html
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('getStartedBtn');
+            if (btn) {
+                btn.addEventListener('click', () => {
+                    window.location.href = 'duaas.html';
+                });
+            }
+        });
+    </script>
+
     <script src="index.js"></script>
 </body>
 </html>
